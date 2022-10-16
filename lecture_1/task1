@@ -1,6 +1,6 @@
 #Написать функцию для заполнения массива из 1 000 000 элементов целыми числами от 0 до 999
 
-N=1000
-A=[0]*1000000
-A=[i for i in range(N)]
-print (A)
+import random
+A = [0]*1000000
+A = [random.randrange (1000) for i in range (1000000)]
+print(A)
