@@ -1,0 +1,12 @@
+import timeit
+
+code_to_test = """
+def calchist(massiv):
+    a=[0]*10
+    for elem in massiv:
+        a [int(elem//100)]+=1
+    return a
+"""
+
+elapsed_time = timeit.timeit(code_to_test, number=100)
+print(elapsed_time)
